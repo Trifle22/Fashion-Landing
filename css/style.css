@@ -517,7 +517,7 @@ a {
 }
 
 .sec-screen-right {
-  background: #22262A url(../img/sec-scr-right.svg);
+  background: #22262A url(../img/sec-screen-imgs/sec-scr-right.svg);
   height: calc(100% - 40px);
   background-repeat: no-repeat;
   background-position: center;

@@ -408,6 +408,9 @@ a {
 .footer .container {
   width: 85%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 .footer-text {
   display: flex;
@@ -415,6 +418,7 @@ a {
   justify-content: start;
   align-items: start;
   max-width: 400px;
+  flex-basis: 40%;
 }
 .footer-location {
   display: flex;
@@ -430,4 +434,152 @@ a {
   fill: $text-color;
   margin-left: 0;
   margin-right: 30px;
+}
+.mail {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-color;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 0;
+  margin-bottom: 4px;
+
+  &:hover {
+    padding-bottom: 6px;
+  }
+}
+.number {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-color;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.socials {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footer-icon {
+  width: 17px;
+  height: 17px;
+  color: $text-color;
+  fill: $text-color;
+  margin-left: 0;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    fill: $price-text-color;
+  }
+}
+
+.recive {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-basis: 50%;
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 11px 23px;
+    background-color: white;
+    margin-bottom: 70px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+
+    input {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      color: $text-color;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      background-color: transparent;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      color: $text-color;
+      border: none;
+      outline: none;
+    }
+
+  }
+
+}
+.recive-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 37px;
+  color: $text-color;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.links-title {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: $text-color;
+  margin: 0;
+  margin-bottom: 27px;
+}
+.footer-link {
+  margin: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-color;
+  transition: all 0.3s ease-in-out;
+  z-index: 99;
+  padding: 5px;
+
+  &:hover {
+    background-color: #d7cade;
+    border-radius: 5px;
+    z-index: 99;
+  }
+}
+.copyright {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #e7f5f8;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #22262A;
 }

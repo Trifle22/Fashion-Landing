@@ -1,3 +1,5 @@
+@import 'normalize';
+
 @font-face  {
   font-family: 'Poppins';
   src: url(../fonts/Poppins-Light.woff2);
@@ -22,7 +24,6 @@ body {
   background-color: #e5e5e5;
   color: $text-color;
   font-family: $font;
-  font-weight: bold;
 }
 a {
   text-decoration: none;
@@ -42,6 +43,9 @@ a {
   width: 163px;
   height: 21px;
 }
+.header-menu {
+  margin: 0 auto;
+}
 .header-menu-link {
   font-weight: lighter;
   text-transform: uppercase;
@@ -49,9 +53,9 @@ a {
   transition: all 0.3s ease-in-out;
   &:hover {
     padding: 5px;
-    background-color: $price-text-color;
+    background-color: #d7cade;
     border-radius: 7px;
-    color: whitesmoke;
+    color: $text-color;
   }
 }
 .header-icons {
@@ -81,4 +85,349 @@ a {
   margin: 10px;
   z-index: 99;
   cursor: pointer;
+}
+.first-screen {
+  width: 100%;
+  height: 100vh;
+  background: #d0dee1 url(../img/first-screen-bgr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.first-screen .container {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.first-screen-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 100px;
+}
+.first-screen-title {
+  text-transform: uppercase;
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 100px;
+  margin: 0;
+}
+.first-screen-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+.first-screen-buttons {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.first-screen-buttons a {
+  color: whitesmoke;
+  padding: 4px 24px;
+  background-color: $text-color;
+  margin-right: 34px;
+  text-transform: uppercase;
+  margin-top: 27px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    color: $text-color;
+  }
+}
+.second-screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 85%;
+  margin: 0 auto;
+  height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.sec-screen-left ,.sec-screen-right {
+  flex-basis: 45%;
+}
+.sec-scr-left-top {
+  flex-grow: 1;
+  margin-bottom: 12px;
+}
+.sec-scr-bot-left {
+  margin-right: 14px;
+}
+.sec-scr-bot-right {
+  margin-left: 5px;
+}
+.sec-screen-right {
+  background: $text-color url(../img/sec-scr-right.svg);
+  height: calc(100% - 40px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.category-name {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  padding: 4px 23px;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    color: whitesmoke;
+  }
+}
+.womans {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 111px;
+}
+.womans-title {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 30px;
+  color: $text-color;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.womans-description {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-color;
+  margin: 0;
+  margin-bottom: 65px;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  transition: all 0.3s ease-in-out;
+  z-index: 99;
+
+  &:hover {
+    transform: translateY(-5%);
+  }
+}
+.card-img {
+  width: 90%;
+  margin-bottom: 30px;
+}
+.card-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-color;
+  text-transform: uppercase;
+}
+.card-description {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-color;
+  text-transform: uppercase;
+  display: block;
+}
+.prices {
+  display: flex;
+  align-items: center;
+}
+.old-price, .price {
+  display: inline;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+}
+.old-price {
+  text-decoration: line-through;
+}
+.price {
+  color: $price-text-color;
+}
+.avone-styles {
+  display: flex;
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-bottom: 120px;
+}
+.avone-styles-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: $text-color;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.avone-styles-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-color;
+  margin: 0;
+  margin-bottom: 60px;
+}
+.avone-imgs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.avone-left {
+  flex-basis: 45%;
+  height: 80%;
+  margin-top: 60px;
+}
+.avone-right {
+  flex-basis: 45%;
+  height: 90%;
+  position: relative;
+  padding-right: 38px;
+}
+.avone-link {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    padding-bottom: 6px;
+  }
+}
+.avone-right-img {
+  height: 250px;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  border: 20px solid #e5e5e5;
+  padding: 0;
+}
+.tachen19 {
+  width: 100%;
+  margin-top: 120px;
+  height: 100vh;
+  background-image: url(../img/tachen-bgr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tachen19 .container {
+  width: 85%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+.tachen-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 130px;
+}
+.tachen-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: $text-color;
+  text-transform: uppercase;
+  margin: 0;
+}
+.tachen-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 120px;
+  color: $text-color;
+  text-transform: uppercase;
+  margin: 0;
+}
+.tachen-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: whitesmoke;
+  background-color: $text-color;
+  padding: 4px 20px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    color: $text-color;
+  }
+}
+.footer {
+  background-color: #f2f8fc;
+  padding: 100px 0;
+}
+.footer .container {
+  width: 85%;
+  margin: 0 auto;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  max-width: 400px;
+}
+.footer-location {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 15px;
+    line-height: 22px;
+    color: $text-color;
+  }
+}
+.location {
+  fill: $text-color;
+  margin-left: 0;
+  margin-right: 30px;
 }
